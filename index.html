@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サッカークイズ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <header class="head">
+      <h1>サッカークイズ</h1>
+      <p id="progress" class="progress">1 / 5</p>
+    </header>
+
+    <!-- 問題画面 -->
+    <section id="quiz-screen">
+      <p id="question" class="question"></p>
+      <div id="choices" class="choices"></div>
+
+      <div id="result" class="result" hidden>
+        <div id="mark" class="mark"></div>
+        <p id="judge" class="judge"></p>
+        <p id="explanation" class="explanation"></p>
+        <button id="next-btn" class="next-btn" type="button">次の問題へ</button>
+      </div>
+    </section>
+
+    <!-- 結果画面 -->
+    <section id="score-screen" hidden>
+      <div class="mark mark-goal">&#127942;</div>
+      <p id="score-text" class="score-text"></p>
+      <button id="retry-btn" class="next-btn" type="button">もう一度挑戦する</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
